@@ -1,0 +1,11 @@
+{
+  "name": "dndrestaurant",
+  "version": "1.0.0",
+  "description": "bootstrap project: a dnd themed restaurant website w/ html, scss, css, js. Gonna try my best.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Irene Jiang",
+  "license": "ISC"
+}
