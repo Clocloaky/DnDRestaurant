@@ -4,8 +4,16 @@
   "description": "bootstrap project: a dnd themed restaurant website w/ html, scss, css, js. Gonna try my best.",
   "main": "index.html",
   "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Irene Jiang",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
