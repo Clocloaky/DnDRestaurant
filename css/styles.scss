@@ -1,0 +1,168 @@
+$primary-color: #2155CD;
+$secondary-color: #0AA1DD;
+$text-color: #E8F9FD;
+$button-color: #79DAE8;
+
+.about {
+    padding: 100px 200px;
+    position: relative;
+    min-height: 500px;
+
+    h1 {
+        position: relative;
+        padding-bottom: 20px;
+        font-weight: bolder;
+    }
+
+    img {
+
+        height: auto;
+        display: block;
+        object-fit: cover;
+        min-height: 150px;
+        min-width: 300px;
+        max-width: 100%;
+        border-radius: 10%;
+        padding: 10px;
+    }
+
+}
+
+.btn-main {
+    background-color: $secondary-color  !important;
+    border-color: $secondary-color !important;
+    color: $text-color  !important;
+    font-weight: bold !important;
+
+    &:hover {
+        background-color: $button-color !important;
+        color: $text-color  !important;
+        font-weight: bold !important;
+    }
+}
+
+.carousel-caption {
+    background: rgba(54, 54, 54, 0.7);
+    display: flex;
+    align-items: center;
+
+
+    height: 30%;
+    width: 100%;
+    max-width: 100%;
+
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+    bottom: initial;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.carousel-inner {
+    img {
+        object-fit: cover;
+    }
+}
+
+.news {
+    padding: 100px 100px;
+    position: relative;
+    min-height: 500px;
+
+    h1 {
+        position: relative;
+        padding-bottom: 100px;
+        font-weight: bolder;
+    }
+
+}
+
+.contact {
+    padding: 100px 200px;
+    position: relative;
+    min-height: 500px;
+    background-color: $primary-color;
+    color: $text-color;
+    font-weight: bolder;
+    font-size: large;
+
+    .contact-form {
+        padding-right: 100px;
+    }
+
+    .contact-info {
+        .row {
+            padding: 50px 0px 50px 10px;
+        }
+
+    }
+
+    .contact-label {
+        color: $primary-color;
+    }
+
+    h1 {
+        position: relative;
+        padding-bottom: 20px;
+        font-weight: bolder;
+    }
+
+    h2 {
+        padding-bottom: 50px;
+        font-size: medium;
+    }
+
+}
+
+.footer {
+    background-color: $secondary-color;
+    color: $text-color;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: $secondary-color;
+
+    a {
+        color: $text-color;
+        font-weight: bolder;
+    }
+    li{
+        padding: 0px 20px;
+        &:hover{
+            background-color: $button-color;
+        }
+    }
+    .navbar-toggler{
+        background-color: $button-color;
+        &:focus{
+            
+            box-shadow: #E8F9FD;
+            color: #E8F9FD;
+        }
+        &:hover{
+            background-color: $primary-color;
+        }
+    }
+}
+
+.event {
+    padding: 50px 200px;
+    position: relative;
+    min-height: 500px;
+    background-color: $secondary-color;
+
+    h1 {
+        position: relative;
+        padding-bottom: 50px;
+        color: $text-color;
+        font-weight: bolder;
+    }
+    table{
+        background-color: white;
+    }
+
+}
