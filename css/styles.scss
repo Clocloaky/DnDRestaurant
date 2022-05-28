@@ -142,7 +142,7 @@ $breakpoints: (
 
 }
 
-.facts{
+.facts {
     padding: 50px 100px;
     background-color: $primary-color;
     color: $text-color;
@@ -208,5 +208,47 @@ $breakpoints: (
     .table-responsive {
         min-height: 300px;
         min-width: 300px;
+    }
+}
+
+.owner {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("/images/owner-bg.jpg");
+    padding: 100px 200px;
+
+    .image-container {
+        background: rgba(238, 238, 238, 0.7);
+        display: block;
+        align-items: center;
+        padding: 30px;
+    }
+
+    img {
+        border-radius: 50%;
+        max-width: 200px;
+    }
+}
+
+.employees{
+    h2{
+        padding: 50px;
+        font-weight: bold;
+    }
+    h4{
+        font-size: small;
+        font-weight: lighter;
+    }
+    img{
+        padding: 10px;
+        border-radius: 50%;
+        max-width: 200px;
+    }
+    p{
+        padding: 10px 30px;
+    }
+    .striped{
+        background-color: $secondary-color;
+        color: $text-color;
     }
 }

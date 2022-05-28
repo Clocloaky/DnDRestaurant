@@ -197,4 +197,50 @@
   min-height: 300px;
   min-width: 300px;
 }
+
+.owner {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/images/owner-bg.jpg");
+  padding: 100px 200px;
+}
+
+.owner .image-container {
+  background: rgba(238, 238, 238, 0.7);
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.owner img {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.employees h2 {
+  padding: 50px;
+  font-weight: bold;
+}
+
+.employees h4 {
+  font-size: small;
+  font-weight: lighter;
+}
+
+.employees img {
+  padding: 10px;
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.employees p {
+  padding: 10px 30px;
+}
+
+.employees .striped {
+  background-color: #0AA1DD;
+  color: #E8F9FD;
+}
 /*# sourceMappingURL=styles.css.map */
