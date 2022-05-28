@@ -1,7 +1,12 @@
 .about {
-  padding: 100px 200px;
+  padding: 100px 100px;
   position: relative;
-  min-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 100px 50px;
+  }
 }
 
 .about h1 {
@@ -15,11 +20,10 @@
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  min-height: 150px;
-  min-width: 300px;
   max-width: 100%;
   border-radius: 10%;
   padding: 10px;
+  margin-top: 30px;
 }
 
 .btn-main {
@@ -66,6 +70,12 @@
   min-height: 500px;
 }
 
+@media (max-width: 768px) {
+  .news {
+    padding: 100px 50px;
+  }
+}
+
 .news h1 {
   position: relative;
   padding-bottom: 100px;
@@ -82,8 +92,20 @@
   font-size: large;
 }
 
+@media (max-width: 992px) {
+  .contact {
+    padding: 100px 50px;
+  }
+}
+
 .contact .contact-form {
   padding-right: 100px;
+}
+
+@media (max-width: 992px) {
+  .contact .contact-form {
+    min-width: 500px;
+  }
 }
 
 .contact .contact-info .row {
@@ -145,8 +167,13 @@
 .event {
   padding: 50px 200px;
   position: relative;
-  min-height: 500px;
   background-color: #0AA1DD;
+}
+
+@media (max-width: 992px) {
+  .event {
+    padding: 50px 50px;
+  }
 }
 
 .event h1 {
@@ -158,5 +185,10 @@
 
 .event table {
   background-color: white;
+}
+
+.event .table-responsive {
+  min-height: 300px;
+  min-width: 300px;
 }
 /*# sourceMappingURL=styles.css.map */

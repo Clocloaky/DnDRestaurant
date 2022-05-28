@@ -3,10 +3,22 @@ $secondary-color: #0AA1DD;
 $text-color: #E8F9FD;
 $button-color: #79DAE8;
 
+$breakpoints: (
+    "xs": 0,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+);
+
+
 .about {
-    padding: 100px 200px;
+    padding: 100px 100px;
     position: relative;
-    min-height: 500px;
+
+    @media (max-width: map-get($breakpoints, "md")) {
+        padding: 100px 50px;
+    }
 
     h1 {
         position: relative;
@@ -19,23 +31,26 @@ $button-color: #79DAE8;
         height: auto;
         display: block;
         object-fit: cover;
-        min-height: 150px;
-        min-width: 300px;
         max-width: 100%;
         border-radius: 10%;
         padding: 10px;
+        margin-top: 30px;
     }
+
+
 
 }
 
+
+
 .btn-main {
     background-color: $secondary-color  !important;
-    border-color: $secondary-color !important;
+    border-color: $secondary-color  !important;
     color: $text-color  !important;
     font-weight: bold !important;
 
     &:hover {
-        background-color: $button-color !important;
+        background-color: $button-color  !important;
         color: $text-color  !important;
         font-weight: bold !important;
     }
@@ -72,6 +87,10 @@ $button-color: #79DAE8;
     position: relative;
     min-height: 500px;
 
+    @media (max-width: map-get($breakpoints, "md")) {
+        padding: 100px 50px;
+    }
+
     h1 {
         position: relative;
         padding-bottom: 100px;
@@ -88,9 +107,15 @@ $button-color: #79DAE8;
     color: $text-color;
     font-weight: bolder;
     font-size: large;
+    @media (max-width: map-get($breakpoints, "lg")) {
+        padding: 100px 50px;
+    }
 
     .contact-form {
         padding-right: 100px;
+        @media (max-width: map-get($breakpoints, "lg")) {
+            min-width: 500px;
+        }
     }
 
     .contact-info {
@@ -130,20 +155,25 @@ $button-color: #79DAE8;
         color: $text-color;
         font-weight: bolder;
     }
-    li{
+
+    li {
         padding: 0px 20px;
-        &:hover{
+
+        &:hover {
             background-color: $button-color;
         }
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         background-color: $button-color;
-        &:focus{
-            
+
+        &:focus {
+
             box-shadow: #E8F9FD;
             color: #E8F9FD;
         }
-        &:hover{
+
+        &:hover {
             background-color: $primary-color;
         }
     }
@@ -152,8 +182,11 @@ $button-color: #79DAE8;
 .event {
     padding: 50px 200px;
     position: relative;
-    min-height: 500px;
     background-color: $secondary-color;
+
+    @media (max-width: map-get($breakpoints, "lg")) {
+        padding: 50px 50px;
+    }
 
     h1 {
         position: relative;
@@ -161,8 +194,13 @@ $button-color: #79DAE8;
         color: $text-color;
         font-weight: bolder;
     }
-    table{
+
+    table {
         background-color: white;
     }
 
+    .table-responsive {
+        min-height: 300px;
+        min-width: 300px;
+    }
 }
