@@ -37,8 +37,6 @@ $breakpoints: (
         margin-top: 30px;
     }
 
-
-
 }
 
 
@@ -107,12 +105,14 @@ $breakpoints: (
     color: $text-color;
     font-weight: bolder;
     font-size: large;
+
     @media (max-width: map-get($breakpoints, "lg")) {
         padding: 100px 50px;
     }
 
     .contact-form {
         padding-right: 100px;
+
         @media (max-width: map-get($breakpoints, "lg")) {
             min-width: 500px;
         }
@@ -140,6 +140,12 @@ $breakpoints: (
         font-size: medium;
     }
 
+}
+
+.facts{
+    padding: 50px 100px;
+    background-color: $primary-color;
+    color: $text-color;
 }
 
 .footer {
