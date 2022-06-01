@@ -29,13 +29,13 @@
 .btn-main {
   background-color: #0AA1DD !important;
   border-color: #0AA1DD !important;
-  color: #E8F9FD !important;
+  color: white !important;
   font-weight: bold !important;
 }
 
 .btn-main:hover {
   background-color: #79DAE8 !important;
-  color: #E8F9FD !important;
+  color: white !important;
   font-weight: bold !important;
 }
 
@@ -87,7 +87,7 @@
   position: relative;
   min-height: 500px;
   background-color: #2155CD;
-  color: #E8F9FD;
+  color: white;
   font-weight: bolder;
   font-size: large;
 }
@@ -130,12 +130,21 @@
 .facts {
   padding: 50px 100px;
   background-color: #2155CD;
-  color: #E8F9FD;
+  color: white;
+}
+
+.facts h3 {
+  font-size: medium;
+}
+
+.facts p {
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 .footer {
   background-color: #0AA1DD;
-  color: #E8F9FD;
+  color: white;
   font-weight: bold;
 }
 
@@ -144,7 +153,7 @@
 }
 
 .navbar a {
-  color: #E8F9FD;
+  color: white;
   font-weight: bolder;
 }
 
@@ -185,17 +194,35 @@
 .event h1 {
   position: relative;
   padding-bottom: 50px;
-  color: #E8F9FD;
+  color: white;
   font-weight: bolder;
 }
 
 .event table {
   background-color: white;
+  border-style: none;
+  color: white;
+}
+
+.event th {
+  color: black;
 }
 
 .event .table-responsive {
   min-height: 300px;
   min-width: 300px;
+}
+
+.event .table-striped > tbody > tr:nth-child(odd) > td,
+.event .table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #79DAE8;
+  border: none;
+}
+
+.event .table-striped > tbody > tr:nth-child(even) > td,
+.event .table-striped > tbody > tr:nth-child(even) > th {
+  border: none;
+  color: black;
 }
 
 .owner {
@@ -241,6 +268,85 @@
 
 .employees .striped {
   background-color: #0AA1DD;
-  color: #E8F9FD;
+  color: white;
+}
+
+.events {
+  padding: 0px 200px;
+}
+
+@media (max-width: 992px) {
+  .events {
+    padding: 50px 100px;
+  }
+}
+
+.events h1 {
+  padding: 50px 0px;
+}
+
+.events #filter-head {
+  margin: auto;
+  padding: 10px;
+}
+
+.events h1 {
+  position: relative;
+  padding-bottom: 50px;
+  font-weight: bolder;
+}
+
+.events h2 {
+  font-size: medium;
+}
+
+.events .event-desc {
+  padding-bottom: 50px;
+}
+
+.events .event-desc .row {
+  padding-bottom: 10px;
+}
+
+.events .event-filter {
+  padding: 20px 100px 0px 100px;
+  background-color: #2155CD;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .events .event-filter {
+    padding: 50px 50px;
+  }
+}
+
+.subscription-image {
+  background-attachment: local;
+  background-size: cover;
+  background-image: url("/images/newsletter-bg.png");
+  min-height: 300px;
+}
+
+.subscription-image .container-fluid {
+  padding: 0px 100px;
+}
+
+@media (max-width: 768px) {
+  .subscription-image .container-fluid {
+    padding: 0px 50px;
+  }
+}
+
+.subscription-image h2 {
+  color: white;
+}
+
+.subscription-image .image-container {
+  background: rgba(50, 50, 50, 0.5);
+  min-height: 300px;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
 $primary-color: #2155CD;
 $secondary-color: #0AA1DD;
-$text-color: #E8F9FD;
+$text-color: white;
 $button-color: #79DAE8;
 
 $breakpoints: (
@@ -146,6 +146,15 @@ $breakpoints: (
     padding: 50px 100px;
     background-color: $primary-color;
     color: $text-color;
+
+    h3 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: xx-large;
+        font-weight: bolder;
+    }
 }
 
 .footer {
@@ -203,12 +212,31 @@ $breakpoints: (
 
     table {
         background-color: white;
+        border-style: none;
+        color: white;
+    }
+
+    th {
+        color: black;
     }
 
     .table-responsive {
         min-height: 300px;
         min-width: 300px;
     }
+
+    .table-striped>tbody>tr:nth-child(odd)>td,
+    .table-striped>tbody>tr:nth-child(odd)>th {
+        background-color: $button-color;
+        border: none;
+    }
+
+    .table-striped>tbody>tr:nth-child(even)>td,
+    .table-striped>tbody>tr:nth-child(even)>th {
+        border: none;
+        color: black;
+    }
+
 }
 
 .owner {
@@ -230,25 +258,97 @@ $breakpoints: (
     }
 }
 
-.employees{
-    h2{
+.employees {
+    h2 {
         padding: 50px;
         font-weight: bold;
     }
-    h4{
+
+    h4 {
         font-size: small;
         font-weight: lighter;
     }
-    img{
+
+    img {
         padding: 10px;
         border-radius: 50%;
         max-width: 200px;
     }
-    p{
+
+    p {
         padding: 10px 30px;
     }
-    .striped{
+
+    .striped {
         background-color: $secondary-color;
         color: $text-color;
+    }
+}
+
+.events {
+    padding: 0px 200px;
+
+    @media (max-width: map-get($breakpoints, "lg")) {
+        padding: 50px 100px;
+    }
+
+    h1 {
+        padding: 50px 0px;
+    }
+    #filter-head{
+        margin: auto;
+        padding: 10px;
+    }
+    h1{
+        position: relative;
+        padding-bottom: 50px;
+        font-weight: bolder;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    .event-desc{
+        padding-bottom: 50px;
+        .row{
+            padding-bottom: 10px;
+        }
+    }
+
+    .event-filter {
+        padding: 20px 100px 0px 100px;
+        background-color: $primary-color;
+        color: $text-color;
+
+        @media (max-width: map-get($breakpoints, "lg")) {
+            padding: 50px 50px;
+        }
+    }
+}
+
+.subscription-image{
+    background-attachment:local;
+    background-size: cover;
+    background-image: url("/images/newsletter-bg.png");
+    min-height: 300px;
+
+    .container-fluid{
+        padding: 0px 100px;
+
+        @media (max-width: map-get($breakpoints, "md")) {
+            padding: 0px 50px;
+        }
+    }
+
+    h2{
+        color: $text-color;
+    }
+    
+    .image-container {
+        background: rgba(50, 50, 50, 0.5);
+        min-height: 300px;
+        display: block;
+        align-items: center;
     }
 }
