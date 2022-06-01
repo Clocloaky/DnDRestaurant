@@ -272,17 +272,14 @@
 }
 
 .events {
-  padding: 0px 200px;
+  padding: 50px 200px;
+  min-width: 500px;
 }
 
 @media (max-width: 992px) {
   .events {
     padding: 50px 100px;
   }
-}
-
-.events h1 {
-  padding: 50px 0px;
 }
 
 .events #filter-head {
@@ -300,12 +297,27 @@
   font-size: medium;
 }
 
+.events .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
 .events .event-desc {
   padding-bottom: 50px;
 }
 
+.events .event-desc h1 {
+  padding: 0px;
+}
+
 .events .event-desc .row {
   padding-bottom: 10px;
+}
+
+.events #event-desc-btn {
+  display: none;
 }
 
 .events #eventBlock {
@@ -322,6 +334,15 @@
   .events .event-filter {
     padding: 50px 50px;
   }
+}
+
+.events table {
+  margin: auto;
+}
+
+.events .table-size {
+  max-height: 500px;
+  overflow: scroll;
 }
 
 .subscription-image {

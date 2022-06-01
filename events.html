@@ -49,7 +49,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h1>Events</h1>
+                    <h1 class="text-center">Events</h1>
                 </div>
             </div>
 
@@ -73,15 +73,15 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col table-responsive d-flex align-items-center">
-                <table id="event-table" onclick="clickedRow()" class="table table-striped">
+            <div class="col table-responsive d-flex align-items-center table-size">
+                <table id="event-table"
+                    class="table table-striped">
                     <thead>
-                        <tr>
-                            <th scope="col">Room #</th>
-                            <th scope="col">Date & Time</th>
-                            <th scope="col">Title</th>
-                            <th scope="col" class="d-none d-lg-table-cell">Description</th>
+                        <tr id="table-header">
+                            <th scope="col" class="header">Room #</th>
+                            <th scope="col" class="header">Date & Time</th>
+                            <th scope="col" class="header">Title</th>
+                            <th scope="col" class="d-none d-lg-table-cell header">Description</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -169,9 +169,15 @@
                     </tbody>
                 </table>
             </div>
+
             <hr />
             <div class="event-desc" id="eventBlock">
-                <div class="container-fluid ">
+                <div class="container-fluid border border-2">
+                    <div class="row pt-3">
+                        <div class="col d-flex justify-content-end">
+                            <button class="btn btn-primary py-1" id="event-desc-btn"> x </button>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <h1>
@@ -184,13 +190,13 @@
                             <h2 id=event-title>Event Title</h2>
                         </div>
                         <div class="col-sm-6">
-                            <h2 class="event-time">Event Time</h2>
+                            <h2 id="event-time">Event Time</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <h2 class="event-type">Event Type</h2>
-                            <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <div class="col pb-5">
+                            <h2 id="event-type">Event Type</h2>
+                            <p id="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Placeat
                                 voluptate corporis modi. Est et earum incidunt aperiam sint obcaecati eum libero non
                                 repudiandae explicabo adipisci, vero dolores officia, quaerat ducimus.</p>
