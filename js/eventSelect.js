@@ -1,12 +1,19 @@
-function clickedRow(){
+function clickedRow() {
     let table = document.getElementById('event-table');
-    let cells = table.getElementsByTagName('td');
+    let rows = table.getElementsByTagName('tr');
 
-    for (let i=0; i < cells.length; i++){
-        let cell = cells[i];
-        cell.onclick = function (){
-            console.log(`${cell} was clicked.`);
+    for (let i = 0; i < rows.length; i++) {
+        let row = rows[i];
+        // console.log(rows[i]);
+        row.onclick = function () {
+            displayEvent(row);
         }
     }
 }
 
+function displayEvent(cell) {
+    document.getElementById('eventBlock').style.display = "inline";
+    console.log(cell);
+
+
+}

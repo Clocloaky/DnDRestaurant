@@ -295,11 +295,13 @@ $breakpoints: (
     h1 {
         padding: 50px 0px;
     }
-    #filter-head{
+
+    #filter-head {
         margin: auto;
         padding: 10px;
     }
-    h1{
+
+    h1 {
         position: relative;
         padding-bottom: 50px;
         font-weight: bolder;
@@ -309,11 +311,16 @@ $breakpoints: (
         font-size: medium;
     }
 
-    .event-desc{
+    .event-desc {
         padding-bottom: 50px;
-        .row{
+
+        .row {
             padding-bottom: 10px;
         }
+    }
+
+    #eventBlock {
+        display: none;
     }
 
     .event-filter {
@@ -327,13 +334,13 @@ $breakpoints: (
     }
 }
 
-.subscription-image{
-    background-attachment:local;
+.subscription-image {
+    background-attachment: local;
     background-size: cover;
     background-image: url("/images/newsletter-bg.png");
     min-height: 300px;
 
-    .container-fluid{
+    .container-fluid {
         padding: 0px 100px;
 
         @media (max-width: map-get($breakpoints, "md")) {
@@ -341,10 +348,10 @@ $breakpoints: (
         }
     }
 
-    h2{
+    h2 {
         color: $text-color;
     }
-    
+
     .image-container {
         background: rgba(50, 50, 50, 0.5);
         min-height: 300px;

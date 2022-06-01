@@ -308,6 +308,10 @@
   padding-bottom: 10px;
 }
 
+.events #eventBlock {
+  display: none;
+}
+
 .events .event-filter {
   padding: 20px 100px 0px 100px;
   background-color: #2155CD;
