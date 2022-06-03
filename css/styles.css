@@ -91,6 +91,38 @@
   font-weight: bolder;
 }
 
+.news-header {
+  background-color: #2155CD;
+}
+
+.news-header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0px;
+  color: white;
+}
+
+.news-page {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/images/blurred-bg.jpg");
+  padding: 100px 100px;
+}
+
+@media (max-width: 768px) {
+  .news-page {
+    padding: 50px 0px;
+  }
+}
+
+.news-page .card {
+  margin-bottom: 50px;
+}
+
 .contact {
   padding: 100px 200px;
   position: relative;

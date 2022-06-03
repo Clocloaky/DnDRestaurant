@@ -34,6 +34,7 @@ $breakpoints: (
         max-width: 100%;
         border-radius: 10%;
         margin-top: 30px;
+
         @media (max-width: map-get($breakpoints, "xs")) {
             padding: 0px;
         }
@@ -75,8 +76,8 @@ $breakpoints: (
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 
-    h1{
-        padding:20px;
+    h1 {
+        padding: 20px;
     }
 }
 
@@ -103,6 +104,32 @@ $breakpoints: (
 
 }
 
+.news-header {
+    background-color: $primary-color;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px;
+        color: $text-color;
+    }
+}
+
+.news-page {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("/images/blurred-bg.jpg");
+    padding: 100px 100px;
+
+    @media (max-width: map-get($breakpoints, "md")) {
+        padding: 50px 0px;
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+}
+
 .contact {
     padding: 100px 200px;
     position: relative;
@@ -119,15 +146,17 @@ $breakpoints: (
 
     .contact-form {
         padding-right: 100px;
+
         @media (max-width: map-get($breakpoints, "md")) {
             padding-right: 0px;
         }
     }
 
     .contact-info {
-        padding-left:50px;
+        padding-left: 50px;
+
         @media (max-width: map-get($breakpoints, "md")) {
-            padding-left:0px;
+            padding-left: 0px;
         }
     }
 
@@ -146,14 +175,15 @@ $breakpoints: (
         font-size: medium;
     }
 
-    p{
+    p {
         text-align: justify;
         text-justify: inter-word;
     }
 
-    .contact-border{
+    .contact-border {
         border-right-style: solid;
         border-width: medium;
+
         @media (max-width: map-get($breakpoints, "md")) {
             border-right-style: none;
         }
@@ -174,9 +204,11 @@ $breakpoints: (
         font-size: xx-large;
         font-weight: bolder;
     }
-    .fact-border{
+
+    .fact-border {
         border-right-style: solid;
         border-width: medium;
+
         @media (max-width: map-get($breakpoints, "md")) {
             border-right-style: none;
         }
@@ -248,7 +280,7 @@ $breakpoints: (
 
     .table-responsive {
         min-height: 300px;
-        
+
     }
 
     .table-striped>tbody>tr:nth-child(odd)>td,
@@ -270,6 +302,7 @@ $breakpoints: (
     background-size: cover;
     background-image: url("/images/owner-bg.jpg");
     padding: 100px 200px;
+
     @media (max-width: map-get($breakpoints, "sm")) {
         padding: 10px 10px;
     }
@@ -279,6 +312,7 @@ $breakpoints: (
         display: block;
         align-items: center;
         padding: 30px;
+
         @media (max-width: map-get($breakpoints, "sm")) {
             padding: 20px;
             display: block;
@@ -327,6 +361,7 @@ $breakpoints: (
     @media (max-width: map-get($breakpoints, "lg")) {
         padding: 50px 100px;
     }
+
     @media (max-width: map-get($breakpoints, "md")) {
         padding: 100px 0px;
     }
@@ -364,8 +399,8 @@ $breakpoints: (
         }
     }
 
-    #event-desc-btn{
-        display:none;
+    #event-desc-btn {
+        display: none;
     }
 
     #eventBlock {
@@ -397,6 +432,7 @@ $breakpoints: (
     background-size: cover;
     background-image: url("/images/newsletter-bg.png");
     min-height: 300px;
+
     .container-fluid {
         padding: 0px 100px;
 
