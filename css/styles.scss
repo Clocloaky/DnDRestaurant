@@ -125,9 +125,9 @@ $breakpoints: (
     }
 
     .contact-info {
-        
+        padding-left:50px;
         @media (max-width: map-get($breakpoints, "md")) {
-
+            padding-left:0px;
         }
     }
 

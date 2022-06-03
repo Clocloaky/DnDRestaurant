@@ -118,6 +118,16 @@
   }
 }
 
+.contact .contact-info {
+  padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .contact .contact-info {
+    padding-left: 0px;
+  }
+}
+
 .contact .contact-label {
   color: #2155CD;
 }
